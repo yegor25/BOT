@@ -1,0 +1,28 @@
+<span>value1<input name="value1" id="value1" type="number"></span>
+<span>value2<input type="number" id="value2"></span>
+<p>
+   <label> <input type="button" value="+" id="plus">
+    <input type="button" value="-" id="minus">
+    <input type="button" value="*" id="multiply">
+    <input type="button" value="/" id="devide">
+    </label>
+</p>
+<p>
+  <label> <input type="button" value="=" id="equal"> 
+   <input type="text" id="answer">
+   </label>
+</p>
+<script>
+var equal=document.getElementById("equal");
+    var number1=document.getElementById("value1");
+    var number2=document.getElementById("value2");
+var answer=document.getElementById("answer");
+    var plus =document.getElementById("plus");
+    plus.addEventListener('click',onPlus);
+    function onPlus()
+    {var result=+number1.value+(+number2.value);
+    //document.getElementById("equal").innerHTML=result.value;
+     document.getElementById("answer").value=result;
+   }
+   
+</script>
